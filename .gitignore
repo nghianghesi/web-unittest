@@ -1,0 +1,15 @@
+UF.Model/bin/
+UF.Model/obj/
+UF.Service/bin/
+UF.Service/obj/
+UF.Web/bin/
+UF.Web/obj/
+UF.Service.Test/bin/
+UF.Service.Test/obj/
+UF.Web.Test/bin/
+UF.Web.Test/obj/
+UF.Web/.vscode/
+UF.WebMockUtil/obj/
+UF.WebMockUtil/bin/
+UF.Web.Mock/obj/
+UF.Web.Mock/bin/

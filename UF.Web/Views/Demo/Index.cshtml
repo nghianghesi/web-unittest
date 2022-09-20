@@ -1,0 +1,15 @@
+@model UF.Web.ViewModel.InventorySearchViewModel
+@{
+    ViewData["Title"] = "Demo Page";
+}
+
+<div class="text-center">
+    @foreach (var inv in Model.Inventories) {
+        <div>
+            <div>@inv.Supplier.Name</div>
+            @foreach (var partInv in inv.Inventories) {
+                <div>@partInv.Part.Number</div>
+            }
+        </div>
+    }
+</div>
