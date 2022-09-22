@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UF.Service.Test", "UF.Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UF.Web.Mock", "UF.Web.Mock\UF.Web.Mock.csproj", "{8A9DFBC9-466B-47EE-8DC6-D046A9281433}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UF.TestUtil", "UF.TestUtil\UF.TestUtil.csproj", "{050CD2FE-9FE8-4B2B-BFF4-F9E2B884D6DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UF.TestUtil", "UF.WebMockUtil\UF.WebMockUtil.csproj", "{050CD2FE-9FE8-4B2B-BFF4-F9E2B884D6DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
