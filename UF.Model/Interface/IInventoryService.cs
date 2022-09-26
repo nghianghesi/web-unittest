@@ -1,7 +1,7 @@
 using UF.Entity;
 
 namespace UF.Service {
-    public interface InventoryService {
+    public interface IInventoryService {
         public IEnumerable<Inventory> SearchInventory(String partNumber);
     }
 }

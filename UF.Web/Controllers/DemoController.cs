@@ -5,9 +5,9 @@ using UF.Web.ViewModel;
 namespace UF.Web.Controllers;
 
 public class DemoController : Controller {
-    private Service.InventoryService inventoryService;
+    private Service.IInventoryService inventoryService;
 
-    public DemoController(Service.InventoryService inventoryService) {
+    public DemoController(Service.IInventoryService inventoryService) {
         this.inventoryService = inventoryService;
     }
 

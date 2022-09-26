@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using System.IO;
+using UF.Web.Controllers;
+using UF.Service;
+using UF.Web.Test.Mock;
 
 namespace UF.Web.Test;
 
@@ -16,12 +19,17 @@ public class UnitTest1
     {
         var builder = WebApplication.CreateBuilder(    
             new WebApplicationOptions() {
-                WebRootPath = "../UF.Web"
+                WebRootPath = "C:\\Users\\nghia\\Source\\Repos\\web-unittest\\UF.Web\\wwwroot",
+                ContentRootPath = "C:\\Users\\nghia\\Source\\Repos\\web-unittest\\UF.Web\\wwwroot"
             }
         );
 
         // Add services to the container.
         builder.Services.AddControllersWithViews();
+        builder.Services.AddMvc()
+                .AddApplicationPart(typeof(DemoController).Assembly)
+                .AddControllersAsServices();
+        builder.Services.AddSingleton<IInventoryService>(new InventoryServiceTest1Mock());
 
         var app = builder.Build();
 
