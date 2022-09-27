@@ -1,7 +1,6 @@
 # ASP.NET CORE View unittest using Selenium and Self-host integrated.
 
-1. Purpose: Unittest all views, including html, js
-Same idea can applied for rich client app base on angular/react/vuejs ....
+1. Purpose: Unittest all views, including html, js. Same idea can be applied for rich client app base on angular/react/vuejs ....
 
 2. Known issue: Couldn't have js code cover report, need apply some js patch in future. 
 
