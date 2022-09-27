@@ -18,3 +18,4 @@
     * Clean up Selenium driver
     * Stop web-app
 
+4. Example: UF.Web.Test/UnitTest1.cs
