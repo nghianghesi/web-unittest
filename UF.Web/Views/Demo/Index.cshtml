@@ -3,10 +3,10 @@
     ViewData["Title"] = "Demo Page";
 }
 
-<div class="text-center">
+<div  id="demo-content" class="text-center">
     @foreach (var inv in Model.Inventories) {
         <div>
-            <div>@inv.Supplier.Name</div>
+            <div class="supplier-name">@inv.Supplier.Name</div>
             @foreach (var partInv in inv.Inventories) {
                 <div>@partInv.Part.Number</div>
             }
